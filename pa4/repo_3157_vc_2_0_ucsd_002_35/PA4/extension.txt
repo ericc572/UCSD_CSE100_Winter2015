@@ -1,0 +1,27 @@
+/*
+ * extension.txt
+ * Author: Yuchun Li (A53063718)
+ * Date: Mar 7, 2015
+ */
+
+1. What problem does this extension program solve?
+-------------------------------------------------------------------------------
+This program simply calculates the number of actors to Kevin Bacon for each
+distance, and also computes the average distance to Kevin Bacon. The result of
+this program can show that "six degrees of separation" concept is true.
+
+2. How do I solve it?
+-------------------------------------------------------------------------------
+Steps to solve the this problem:
+  1) Build the graph with the given database;
+  2) Run BFS on the whole graph starting from Kevin Bacon;
+  3) Iterate the actor map to compute the number of actors for each distance;
+  4) Compute the average distance, and display all the statistics.
+
+3. How do I test it?
+-------------------------------------------------------------------------------
+To test the result is correct, we can simply compute the number of actors that
+displayed in the table, which gives us 11793 actors that Kevin Bacon connects
+to. The total number of actors is 11794, and thus we do know that BFS traverse
+the whole graph. Thus, we know that Kevin Bacon can connect all the actors from
+the database via at most 3 movies. 
